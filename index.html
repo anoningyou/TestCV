@@ -4,84 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Roman CV</title>
-    <link href="styles.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td><img src="longcat.jpg"
-                 alt="longcat"
-                  class="avatar">
-            <td>
+    <div class="container">
+        <div class="info">
+
+            <img src="longcat.jpg" alt="longcat" class="avatar">
+            <div class="info-text">
                 <h1>Roman Romanov</h1>
-                <p><em>Paragraph <strong>12111331553</strong> 2222</em> </p>
+                <p>Paragraph <strong>12111331553</strong> 2222</p>
                 <p><i>Paragraph 2</i> </p>
-            </td>
-        </tr>
-    </table>
 
-    <hr>
-    <h2>My social</h2>
-    <ul type="square">
-        <li><a href="https://developer.mozilla.org" target="_blank">link1</a> </li>
-        <li>https://lol2.com</li>
-    </ul>
-    <hr>
-    <h2>My hobby</h2>
-    <ol type="I">
-        <li>p12</li>
-        <li>p15/li>
-        <li>p1</li>
-        <li>p1</li>
-    </ol>
-    <hr>
-    <h2>work</h2>
-    <table>
-        <tr>
-            <th>company</th>
-            <th>position</th>
-            <th>years</th>
-        </tr>
-        <tr>
-            <td>epam</td>
-            <td>engineer</td>
-            <td>2016-2017</td>
-        </tr>
-        <tr>
-            <td>epam</td>
-            <td>engineer</td>
-            <td>2016-2017</td>
-        </tr>
-        <tr>
-            <td>epam</td>
-            <td>engineer</td>
-            <td>2016-2017</td>
-        </tr>
-    </table>
-    <hr>
+                <h4>My social</h4>
+                <a href="https://developer.mozilla.org" target="_blank">link1</a>
+                |
+                <a href="https://developer.mozilla.org" target="_blank">https://lol2.com</a>
+            </div>
+        </div>
+        <div class="card bg-yellow">
+            <h2>My hobby</h2>
+            <ol class="list">
+                <li>p12</li>
+                <li>p15/li>
+                <li>p1</li>
+                <li>p1</li>
+            </ol>
+        </div>
+        <div class="card bg-green">
+            <h2>work</h2>
+            <table class="table">
+                <tr>
+                    <td>epam</td>
+                    <td>engineer</td>
+                    <td>2016-2017</td>
+                </tr>
+                <tr>
+                    <td>epam</td>
+                    <td>engineer</td>
+                    <td>2016-2017</td>
+                </tr>
+                <tr>
+                    <td>epam</td>
+                    <td>engineer</td>
+                    <td>2016-2018</td>
+                </tr>
+                <tr>
+                    <td>epam</td>
+                    <td>engineer</td>
+                    <td>2016-2017</td>
+                </tr>
+            </table>
+        </div>
+        <div class="card bg-red">
+            <h2>Youtube</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/li">li1111111111111111111</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/li">li2222222222222222</a>
+                </li>
+            </ul>
+        </div>
 
-    <h2>Youtube</h2>
-    <a href="OtherPage.html" target="_blank">open other page</a>
-    <a href="https://youtu.be/SpCUuyZZTp8?t=1941">paused</a>
+        <div class="card bg-red">
+            <h2>Youtube2</h2>
+            <a href="OtherPage.html" target="_blank">open other page</a>
+            <a href="https://youtu.be/SpCUuyZZTp8?t=1941">paused</a>
+        </div>
 
-    <hr>
-    <h2>send me</h2>
 
-    <form action="/">
-        <label for="name">Your name</label>
-        <input id="name" type="text" placeholder="start input...">
-        <br>
-        <label for="email">Your email</label>
-        <input id="email" type="email" placeholder="start input...">
-        <br>
-        <label for="text">Your message:</label>
-        <br>
-        <textarea name="" id="text" cols="15" rows="2"></textarea>
-        <br>
-        <input id="dfgd" type="submit" value="call me">
-    </form>
+        <div class="contact">
+            <h2>send me</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+                        <input id="name" type="text" placeholder="start input...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input id="email" type="email" placeholder="start input...">
+                    </div>
+                </div>
 
+                <div class="form-group">
+                    <label for="text">Your message:</label>
+                    <textarea name="" id="text" cols="15" rows="2"></textarea>
+                </div>
+                <input class="btn" id="dfgd" type="submit" value="call me">
+            </form>
+            
+            <div class="position">
+                <div class="box">
+                    
+                </div>
+            </div>
+
+        </div>
+
+        
+
+
+        <div style="margin-bottom: 500px;"></div>
+
+    </div>
 </body>
 
 </html>
